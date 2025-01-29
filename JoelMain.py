@@ -4,7 +4,7 @@ class Animal:
         self.name = name
 
     def speak(self):
-        return "Animal makes a sound."
+        return "Animal makes a sound. HAHAHAHAHAHAHAHAHHAHAHHAHA"
 
 # Derived Class 1 (Child of Animal)
 class Dog(Animal):
