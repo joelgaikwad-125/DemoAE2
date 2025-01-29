@@ -22,7 +22,7 @@ class Cat(Animal):
         self.color = color
 
     def speak(self):
-        return f"{self.name} (a {self.color} cat) meows!"
+        return f"{self.name} (a {self.color} Pussy cat) meows!"
 
 # Derived Class 3 (Child of Animal)
 class Bird(Animal):
@@ -46,7 +46,7 @@ class Bird(Animal):
 
 # Creating objects and calling methods
 dog = Dog("Buddy", "Golden Retriever")
-cat = Cat("Whiskers", "Black")
+cat = Cat("Kali Billi", "Black")
 bird = Bird("Charlie", "Parrot")
 
 # Displaying output
