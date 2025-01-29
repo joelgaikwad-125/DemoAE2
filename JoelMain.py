@@ -20,6 +20,7 @@ class Cat(Animal):
     def _init_(self, name, color):
         super()._init_(name)
         self.color = color
+        print("Pussy Cat is meowing")
 
     def speak(self):
         return f"{self.name} (a {self.color} cat) meows!"
