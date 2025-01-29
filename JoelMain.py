@@ -26,12 +26,23 @@ class Cat(Animal):
 
 # Derived Class 3 (Child of Animal)
 class Bird(Animal):
-    def _init_(self, name, species):
-        super()._init_(name)
+    def __init__(self, name, species, wing_span):
+        super().__init__(name)
         self.species = species
+        self.wing_span = wing_span  # Additional attribute
 
     def speak(self):
         return f"{self.name} (a {self.species}) chirps!"
+
+    def fly(self, distance):
+        return f"{self.name} flies {distance} meters!"
+
+    def eat(self, food):
+        return f"{self.name} pecks at some {food}."
+
+    def describe(self):
+        return f"{self.name} is a {self.species} with a wingspan of {self.wing_span} meters."
+
 
 # Creating objects and calling methods
 dog = Dog("Buddy", "Golden Retriever")
