@@ -4,7 +4,7 @@ class Animal:
         self.name = name
 
     def speak(self):
-        return "Animal makes a sound."
+        return "Animal makes a sound. HAHAHAHAHAHAHAHAHHAHAHHAHA"
 
 # Derived Class 1 (Child of Animal)
 class TATYA(Animal):
@@ -22,20 +22,35 @@ class Cat(Animal):
         self.color = color
 
     def speak(self):
-        return f"{self.name} (a {self.color} cat) meows!"
+        return f"{self.name} (a {self.color} Pussy cat) meows!"
 
 # Derived Class 3 (Child of Animal)
 class Bird(Animal):
-    def _init_(self, name, species):
-        super()._init_(name)
+    def __init__(self, name, species, wing_span):
+        super().__init__(name)
         self.species = species
+        self.wing_span = wing_span  # Additional attribute
 
     def speak(self):
         return f"{self.name} (a {self.species}) chirps!"
 
+    def fly(self, distance):
+        return f"{self.name} flies {distance} meters!"
+
+    def eat(self, food):
+        return f"{self.name} pecks at some {food}."
+
+    def describe(self):
+        return f"{self.name} is a {self.species} with a wingspan of {self.wing_span} meters."
+
+
 # Creating objects and calling methods
+
 TATYA = TATYA("Buddy", "Gold yelow")
 cat = Cat("Whiskers", "Black")
+
+cat = Cat("Kali Billi", "Black")
+
 bird = Bird("Charlie", "Parrot")
 
 # Displaying output
