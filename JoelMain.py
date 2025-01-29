@@ -7,10 +7,10 @@ class Animal:
         return "Animal makes a sound. HAHAHAHAHAHAHAHAHHAHAHHAHA"
 
 # Derived Class 1 (Child of Animal)
-class Dog(Animal):
-    def _init_(self, name, breed):
+class TATYA(Animal):
+    def _init_(self, name, color):
         super()._init_(name)
-        self.breed = breed
+        self.color = color
 
     def speak(self):
         return f"{self.name} (a {self.breed}) barks!"
@@ -45,11 +45,15 @@ class Bird(Animal):
 
 
 # Creating objects and calling methods
-dog = Dog("Buddy", "Golden Retriever")
+
+TATYA = TATYA("Buddy", "Gold yelow")
+cat = Cat("Whiskers", "Black")
+
 cat = Cat("Kali Billi", "Black")
+
 bird = Bird("Charlie", "Parrot")
 
 # Displaying output
-print(dog.speak())   # Buddy (a Golden Retriever) barks!
+print(TATYA.speak())   # Buddy (a Golden Retriever) barks!
 print(cat.speak())   # Whiskers (a Black cat) meows!
 print(bird.speak())  # Charlie (a Parrot) chirps!
